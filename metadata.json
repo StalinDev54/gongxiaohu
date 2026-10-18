@@ -1,0 +1,6 @@
+{
+  "name": "工小湖 · 雨课堂与智慧教务三端套件",
+  "description": "基于雨课堂核心协议深度重构的轻量客户端套件，支持免扫码秒进班、30秒阻塞长轮询鉴权、超时补答与实时草稿防丢、虚拟列表+WebP课件流及随堂习题提前透视，提供官方网站、微信小程序端与Android客户端完整交互体验。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
