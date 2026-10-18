@@ -27,7 +27,7 @@
 欢迎加入工小湖 QQ 频道，获取项目动态、交流使用体验，并反馈问题与建议。
 
 <div align="center">
-  <img src="https://wework.qpic.cn/wwpic3az/293176_jW9PC57HTTWfUfS_1791909756/0" alt="工小湖 QQ 频道二维码" width="220" style="max-width: 100%; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
+  <img src="./public/blog-assets/qq_channel_qrcode.jpg" alt="工小湖 QQ 频道二维码" width="220" style="max-width: 100%; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
   <p><sub>使用 QQ 扫描二维码，加入频道</sub></p>
 </div>
 
@@ -82,7 +82,7 @@
 工小湖是个人业余开发项目。如果它对你的学习或日常使用有所帮助，欢迎通过下方二维码自愿支持项目的持续维护与开发。感谢每一份鼓励！
 
 <div align="center">
-  <img src="https://wework.qpic.cn/wwpic3az/909499_WvdscmByRpCV43Z_1791805126/0" alt="工小湖捐赠支持二维码" width="220" style="max-width: 100%; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
+  <img src="./public/blog-assets/donate_qrcode.jpg" alt="工小湖捐赠支持二维码" width="220" style="max-width: 100%; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
   <p><sub>扫码自愿支持工小湖</sub></p>
 </div>
 
