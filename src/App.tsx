@@ -17,6 +17,7 @@ import {
 
 const LOGO_URL = 'https://wework.qpic.cn/wwpic3az/121013_b5N-cfkWQ6CtmCI_1792308181/0';
 const LOGO_FALLBACK_URL = '/blog-assets/logo_official.png';
+const ANDROID_DOWNLOAD_URL = 'https://pan.quark.cn/s/236c3ee4c001';
 
 interface ScreenshotItem {
   id: string;
@@ -195,7 +196,8 @@ export default function App() {
 
   const handleDownloadApk = () => {
     setApkDownloading(true);
-    setTimeout(() => setApkDownloading(false), 3000);
+    window.open(ANDROID_DOWNLOAD_URL, '_blank', 'noopener,noreferrer');
+    setTimeout(() => setApkDownloading(false), 2000);
   };
 
   const handleQuickStarTap = (stars: number) => {
@@ -433,7 +435,7 @@ export default function App() {
               新功能
             </h2>
             <div className="flex md:flex-col items-center md:items-start justify-between text-[13px] text-[#8E8E93] md:space-y-0.5">
-              <span>版本 2.4.0</span>
+              <span>版本 2.0.1</span>
               <span>近期更新</span>
             </div>
           </div>
@@ -640,12 +642,14 @@ export default function App() {
 
             <div className="py-3 md:border-b md:border-[#E5E5EA] flex items-center justify-between gap-4">
               <span className="text-[#8E8E93] whitespace-nowrap shrink-0">Android 客户端</span>
-              <button
-                onClick={() => setGetSheetOpen(true)}
+              <a
+                href={ANDROID_DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#007AFF] font-medium hover:underline whitespace-nowrap shrink-0 cursor-pointer"
               >
-                v2.4.0 · 下载 APK
-              </button>
+                v2.0.1 · 15 MB · 夸克网盘下载
+              </a>
             </div>
 
             <div className="py-3 md:border-b md:border-[#E5E5EA] flex items-center justify-between gap-4">
@@ -742,18 +746,21 @@ export default function App() {
             <div className="border-t border-[#E5E5EA] divide-y divide-[#E5E5EA] text-sm">
               <div className="py-3.5 flex items-center justify-between gap-4">
                 <div className="min-w-0">
-                  <div className="font-semibold text-[#1C1C1E] truncate">
-                    Android 客户端
+                  <div className="font-semibold text-[#1C1C1E] truncate flex items-center gap-1.5">
+                    <span>Android 客户端</span>
+                    <span className="text-[10px] font-medium bg-[#E8F3FF] text-[#007AFF] px-1.5 py-0.2 rounded">
+                      夸克网盘
+                    </span>
                   </div>
                   <div className="text-xs text-[#8E8E93] truncate">
-                    v2.4.0 · 4.2 MB
+                    v2.0.1 · 15 MB · 夸克网盘高速下载
                   </div>
                 </div>
                 <button
                   onClick={handleDownloadApk}
-                  className="px-4 py-1.5 rounded-full bg-[#007AFF] hover:bg-[#0066CC] text-white text-xs font-bold whitespace-nowrap shrink-0 transition-colors cursor-pointer"
+                  className="px-4 py-1.5 rounded-full bg-[#007AFF] hover:bg-[#0066CC] active:scale-95 text-white text-xs font-bold whitespace-nowrap shrink-0 transition-colors cursor-pointer"
                 >
-                  {apkDownloading ? '下载中...' : '下载 APK'}
+                  {apkDownloading ? '跳转中...' : '下载 APK'}
                 </button>
               </div>
 

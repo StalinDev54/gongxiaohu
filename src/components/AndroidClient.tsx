@@ -19,7 +19,7 @@ import {
 import { SlideCanvasRenderer } from './SlideCanvasRenderer';
 
 export const AndroidClient: React.FC = () => {
-  const [androidTab, setAndroidTab] = useState<'home' | 'classroom' | 'widget' | 'settings'>('home');
+  const [androidTab, setAndroidTab] = useState<'home' | 'classroom' | 'schedule' | 'settings'>('home');
   const [notifQuickAnswer, setNotifQuickAnswer] = useState<string | null>('C');
   const [slideIdx, setSlideIdx] = useState(2); // Page 147
   const [autoSignEnabled, setAutoSignEnabled] = useState(true);
@@ -147,15 +147,15 @@ export const AndroidClient: React.FC = () => {
               </button>
 
               <button
-                onClick={() => setAndroidTab('widget')}
+                onClick={() => setAndroidTab('schedule')}
                 className="p-3.5 rounded-2xl bg-white border border-black/[0.05] text-left space-y-1"
               >
                 <Calendar className="w-4 h-4 text-emerald-600" />
                 <div className="text-xs font-bold text-slate-900 pt-1">
-                  桌面课表小组件
+                  今日课表与教室
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
-                  手机桌面直接查看今日课程与教室
+                  随时查看当天上课时间与多媒体教室
                 </p>
               </button>
             </div>
@@ -223,11 +223,11 @@ export const AndroidClient: React.FC = () => {
           </div>
         )}
 
-        {/* ==================== TAB 3: DESKTOP WIDGET ==================== */}
-        {androidTab === 'widget' && (
+        {/* ==================== TAB 3: SCHEDULE ==================== */}
+        {androidTab === 'schedule' && (
           <div className="space-y-3.5">
             <div className="text-xs text-slate-500 px-1">
-              Android 桌面小组件预览 (4×2)
+              今日课程安排
             </div>
 
             <div className="p-4 rounded-3xl bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-50 border border-blue-100 space-y-3">
@@ -345,6 +345,26 @@ export const AndroidClient: React.FC = () => {
                   <span className="w-5 h-5 rounded-full bg-white shadow-2xs" />
                 </button>
               </div>
+
+              <div className="p-4 flex items-center justify-between">
+                <div>
+                  <div className="text-sm font-medium text-slate-900">
+                    安装包与版本更新
+                  </div>
+                  <div className="text-[11px] text-slate-400 mt-0.5">
+                    当前版本 v2.0.1 (15 MB) · 夸克网盘官方源
+                  </div>
+                </div>
+                <a
+                  href="https://pan.quark.cn/s/236c3ee4c001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => triggerToast('正在跳转夸克网盘下载最新 APK')}
+                  className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold"
+                >
+                  下载 APK
+                </a>
+              </div>
             </div>
           </div>
         )}
@@ -356,7 +376,7 @@ export const AndroidClient: React.FC = () => {
           [
             { id: 'home', label: '首页', icon: Smartphone },
             { id: 'classroom', label: '课件', icon: Layers },
-            { id: 'widget', label: '小组件', icon: Bell },
+            { id: 'schedule', label: '课表', icon: Calendar },
             { id: 'settings', label: '设置', icon: Sliders }
           ] as const
         ).map((item) => {
