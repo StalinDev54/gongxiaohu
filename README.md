@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Source Code](https://img.shields.io/badge/核心源码-后续待开源-violet)](#-关于开源进度)
 
-[在线体验 (扫码体验)](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载 (夸克网盘)](https://pan.quark.cn/s/236c3ee4c001) · [开发博客](https://blog.jiclub.site/2026/yuketang-deep-dive)
+[在线体验 (扫码体验)](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载 (夸克网盘)](https://pan.quark.cn/s/236c3ee4c001) · [开发博客原理](https://blog.jiclub.site/2026/yuketang-deep-dive)
 
 ---
 
@@ -63,7 +63,7 @@
 | **Android 客户端** | **v2.0.1 稳定版 (15 MB)** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
 | **微信小程序** | **在线体验中** | 扫描上方小程序码直接使用 |
 | **iOS 客户端** | **正在开发构建中** | iOS 同学当前推荐先扫码使用微信小程序 |
-| **Web 演示端** | 在线可用 | [点击访问项目落地页](https://blog.jiclub.site/2026/yuketang-deep-dive) |
+| **官网** | 获取资源 | [点击访问项目](ykt.jiclub.site/) |
 
 ---
 
