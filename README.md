@@ -7,13 +7,13 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Source Code](https://img.shields.io/badge/核心源码-后续待开源-violet)](#-关于开源进度)
 
-[在线体验 (扫码体验)](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载 (夸克网盘)](https://pan.quark.cn/s/236c3ee4c001) · [开发博客原理](https://blog.jiclub.site/2026/yuketang-deep-dive)
+[在线体验（扫码体验）](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载（夸克网盘）](https://pan.quark.cn/s/236c3ee4c001) · [开发博客原理](https://blog.jiclub.site/2026/yuketang-deep-dive) · [QQ 频道](#-qq-频道) · [捐赠支持](#-捐赠支持)
 
 ---
 
 ## 📱 在线体验（微信小程序）
 
-微信扫一扫下方小程序码，即可免安装直接体验工小湖完整功能：
+微信扫一扫下方小程序码，即可免安装直接体验工小湖功能：
 
 <div align="center">
   <img src="./public/blog-assets/qrcode_clean.png" alt="工小湖微信小程序体验码" width="180" style="border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
@@ -22,9 +22,21 @@
 
 ---
 
+## 💬 QQ 频道
+
+欢迎加入工小湖 QQ 频道，获取项目动态、交流使用体验，并反馈问题与建议。
+
+<div align="center">
+  <img src="https://wework.qpic.cn/wwpic3az/293176_jW9PC57HTTWfUfS_1791909756/0" alt="工小湖 QQ 频道二维码" width="220" style="max-width: 100%; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
+  <p><sub>使用 QQ 扫描二维码，加入频道</sub></p>
+</div>
+
+---
+
 ## 为什么写这个项目？
 
 平时在阶梯教室上课，经常被这几件事折磨：
+
 - **坐后排扫码根本扫不上**：大教室离黑板大屏几十米远，雨课堂动态码闪得又快，举着手机拉长焦对半天进不去班；
 - **倒计时一到答案全清空**：随堂计算题刚写完，倒计时一到网页直接弹锁死遮罩，辛苦敲的草稿瞬间没了；
 - **一发题就挡住课件**：老师随堂推题，题目遮罩整个屏幕，想看着 PPT 板书做题根本看不到；
@@ -40,9 +52,7 @@
 - 📝 **超时补答与草稿防丢**：主观题答案与草稿实时存本地。倒计时结束也能继续补交，支持上传演算草稿图。
 - 📖 **课件与题目分栏**：做随堂题不再挡住正在讲的 PPT，弹窗点选一键交卷，边看课件边做题。
 - 💡 **后台保活不掉线**：优化了心跳与轮询通道，切屏查资料或熄屏不会轻易掉线。
-- 📱 **安卓专属体验**：
-  - **画中画悬浮窗 (PiP)**：一边小窗看课件，一边在笔记软件里记重点；
-  - **通知栏快捷答题**：老师推选择题，直接在系统通知栏点选提交，不用切换 App。
+- 📱 安卓构建
 
 ---
 
@@ -50,9 +60,9 @@
 
 | 免扫码秒进班 | 百页课件流式翻阅 |
 | :---: | :---: |
-| <img src="./public/blog-assets/02_home_live_class.png" width="320" alt="免扫码秒进班" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> | <img src="./public/blog-assets/05_slides_bgp_preview.png" width="320" alt="百页课件流式翻阅" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> |
+| <img src="./public/blog-assets/02_home_live_class.png" width="320" alt="免扫码秒进班" style="max-width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> | <img src="./public/blog-assets/05_slides_bgp_preview.png" width="320" alt="百页课件流式翻阅" style="max-width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> |
 | **课件习题分栏 / 弹窗秒交** | **超时补答与演算草稿防丢** |
-| <img src="./public/blog-assets/07_quiz_single_choice.png" width="320" alt="随堂习题弹窗点选即交" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> | <img src="./public/blog-assets/03_quiz_timeout_makeup.png" width="320" alt="超时补交与草稿防丢" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> |
+| <img src="./public/blog-assets/07_quiz_single_choice.png" width="320" alt="随堂习题弹窗点选即交" style="max-width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> | <img src="./public/blog-assets/03_quiz_timeout_makeup.png" width="320" alt="超时补交与草稿防丢" style="max-width: 100%; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> |
 
 ---
 
@@ -60,10 +70,21 @@
 
 | 平台 | 当前状态 | 获取方式 |
 | :--- | :--- | :--- |
-| **Android 客户端** | **v2.0.1 稳定版 (15 MB)** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
+| **Android 客户端** | **v2.0.1 稳定版（15 MB）** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
 | **微信小程序** | **在线体验中** | 扫描上方小程序码直接使用 |
-| **iOS 客户端** | **正在开发构建中** | iOS 同学当前推荐先扫码使用微信小程序 |
-| **官网** | 获取资源 | [点击访问项目](ykt.jiclub.site/) |
+| **iOS 客户端** | **正在开发构建中** | iOS 用户当前推荐先扫码使用微信小程序 |
+| **官网** | 获取资源 | [点击访问项目](https://ykt.jiclub.site/) |
+
+---
+
+## ❤️ 捐赠支持
+
+工小湖是个人业余开发项目。如果它对你的学习或日常使用有所帮助，欢迎通过下方二维码自愿支持项目的持续维护与开发。感谢每一份鼓励！
+
+<div align="center">
+  <img src="https://wework.qpic.cn/wwpic3az/909499_WvdscmByRpCV43Z_1791805126/0" alt="工小湖捐赠支持二维码" width="220" style="max-width: 100%; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
+  <p><sub>扫码自愿支持工小湖</sub></p>
+</div>
 
 ---
 
