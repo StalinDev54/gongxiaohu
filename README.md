@@ -3,11 +3,22 @@
 > 专为早八人写的雨课堂增强工具与校园助手。
 
 [![Android](https://img.shields.io/badge/Android-v2.0.1%20(15MB)-emerald)](https://pan.quark.cn/s/236c3ee4c001)
-[![iOS](https://img.shields.io/badge/iOS-正在开发中-orange)](#客户端支持与下载)
+[![iOS](https://img.shields.io/badge/iOS-正在开发中-orange)](#-客户端支持与下载)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Source Code](https://img.shields.io/badge/核心源码-后续待开源-violet)](#关于开源进度)
+[![Source Code](https://img.shields.io/badge/核心源码-后续待开源-violet)](#-关于开源进度)
 
-[在线体验](https://blog.jiclub.site/2026/yuketang-deep-dive) · [安卓端下载 (夸克网盘)](https://pan.quark.cn/s/236c3ee4c001) · [开发博客](https://blog.jiclub.site/2026/yuketang-deep-dive)
+[在线体验 (扫码体验)](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载 (夸克网盘)](https://pan.quark.cn/s/236c3ee4c001) · [开发博客](https://blog.jiclub.site/2026/yuketang-deep-dive)
+
+---
+
+## 📱 在线体验（微信小程序）
+
+微信扫一扫下方小程序码，即可免安装直接体验工小湖完整功能：
+
+<div align="center">
+  <img src="./public/blog-assets/qrcode_clean.png" alt="工小湖微信小程序体验码" width="180" style="border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); padding: 8px; background: white;" />
+  <p><sub>微信扫一扫，立即体验小程序</sub></p>
+</div>
 
 ---
 
@@ -35,18 +46,28 @@
 
 ---
 
-## 客户端支持与下载
+## 📸 页面截图
+
+| 免扫码秒进班 | 百页课件流式翻阅 |
+| :---: | :---: |
+| <img src="./public/blog-assets/02_home_live_class.png" width="320" alt="免扫码秒进班" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> | <img src="./public/blog-assets/05_slides_bgp_preview.png" width="320" alt="百页课件流式翻阅" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> |
+| **课件习题分栏 / 弹窗秒交** | **超时补答与演算草稿防丢** |
+| <img src="./public/blog-assets/07_quiz_single_choice.png" width="320" alt="随堂习题弹窗点选即交" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> | <img src="./public/blog-assets/03_quiz_timeout_makeup.png" width="320" alt="超时补交与草稿防丢" style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);" /> |
+
+---
+
+## 📦 客户端支持与下载
 
 | 平台 | 当前状态 | 获取方式 |
 | :--- | :--- | :--- |
 | **Android 客户端** | **v2.0.1 稳定版 (15 MB)** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
-| **微信小程序** | 正常运行中 | 微信扫码即用（可在 Web 官网首页扫码） |
+| **微信小程序** | **在线体验中** | 扫描上方小程序码直接使用 |
 | **iOS 客户端** | **正在开发构建中** | iOS 同学当前推荐先扫码使用微信小程序 |
-| **Web 演示端** | 在线可用 | [点击直接在线体验](https://blog.jiclub.site/2026/yuketang-deep-dive) |
+| **Web 演示端** | 在线可用 | [点击访问项目落地页](https://blog.jiclub.site/2026/yuketang-deep-dive) |
 
 ---
 
-## 关于开源进度
+## 🔒 关于开源进度
 
 - **核心源码后续待开源**：目前本仓库主要开源托管 **Web 官网展示页与多端交互演示代码**。
 - 雨课堂协议底层解析、自动化打卡及客户端核心实现源码，正在整理脱敏中，后续会逐步开放。
