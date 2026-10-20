@@ -7,11 +7,20 @@
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
   }
 
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #1c1c1e;
+    overflow-x: hidden;
+  }
+
   body {
     font-family: var(--font-sans);
-    background-color: #F8FAFC;
-    color: #0F172A;
-    overflow-x: hidden;
   }
 
   h1, h2, h3, .font-display {
@@ -32,7 +41,6 @@
   text-wrap: balance;
 }
 
-/* Custom subtle scrollbars for virtual slide scrubbers */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
