@@ -2,12 +2,12 @@
 
 > 专为早八人写的雨课堂增强工具与校园助手。
 
-[![Android](https://img.shields.io/badge/Android-v2.1.0%20(15MB)-emerald)](https://pan.quark.cn/s/236c3ee4c001)
-[![iOS](https://img.shields.io/badge/iOS-正在开发中-orange)](#-客户端支持与下载)
+[![Android](https://img.shields.io/badge/Android-v2.1.0%20(15MB)-emerald)](https://pan.quark.cn/s/236c3ee4c001#/list/share)
+[![iOS](https://img.shields.io/badge/iOS-v2.1.0%20Releases-blue)](https://github.com/StalinDev54/gongxiaohu/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Source Code](https://img.shields.io/badge/核心源码-后续待开源-violet)](#-关于开源进度)
 
-[在线体验（扫码体验）](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载（夸克网盘）](https://pan.quark.cn/s/236c3ee4c001) · [开发博客原理](https://blog.jiclub.site/2026/yuketang-deep-dive) · [QQ 频道](#-qq-频道) · [捐赠支持](#-捐赠支持)
+[在线体验（扫码体验）](#-在线体验微信小程序) · [页面截图](#-页面截图) · [安卓端下载（夸克网盘）](https://pan.quark.cn/s/236c3ee4c001#/list/share) · [iOS 端下载（GitHub Releases）](https://github.com/StalinDev54/gongxiaohu/releases) · [开发博客原理](https://blog.jiclub.site/2026/yuketang-deep-dive) · [QQ 频道](#-qq-频道) · [捐赠支持](#-捐赠支持)
 
 ---
 
@@ -70,9 +70,9 @@
 
 | 平台 | 当前状态 | 获取方式 |
 | :--- | :--- | :--- |
-| **Android 客户端** | **v2.1.0 稳定版（15 MB）** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
+| **Android 客户端** | **v2.1.0 稳定版（15 MB）** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001#/list/share) |
+| **iOS 客户端** | **v2.1.0 正式版** | [点击前往 GitHub Releases 下载](https://github.com/StalinDev54/gongxiaohu/releases) |
 | **微信小程序** | **在线体验中** | 扫描上方小程序码直接使用 |
-| **iOS 客户端** | **正在开发构建中** | iOS 用户当前推荐先扫码使用微信小程序 |
 | **官网** | 获取资源 | [点击访问项目](https://ykt.jiclub.site/) |
 
 ---
