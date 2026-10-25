@@ -2,7 +2,7 @@
 
 > 专为早八人写的雨课堂增强工具与校园助手。
 
-[![Android](https://img.shields.io/badge/Android-v2.0.1%20(15MB)-emerald)](https://pan.quark.cn/s/236c3ee4c001)
+[![Android](https://img.shields.io/badge/Android-v2.1.0%20(15MB)-emerald)](https://pan.quark.cn/s/236c3ee4c001)
 [![iOS](https://img.shields.io/badge/iOS-正在开发中-orange)](#-客户端支持与下载)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Source Code](https://img.shields.io/badge/核心源码-后续待开源-violet)](#-关于开源进度)
@@ -48,11 +48,11 @@
 
 ## 主要功能
 
-- 🚀 **免扫码秒进班**：开课自动检测并进入当前课堂，告别举着手机长焦对大屏。
+- 🚀 **免扫码秒进班**：开课自动检测进入，支持手机短信验证码登录，告别举手机长焦对大屏。
 - 📝 **超时补答与草稿防丢**：主观题答案与草稿实时存本地。倒计时结束也能继续补交，支持上传演算草稿图。
 - 📖 **课件与题目分栏**：做随堂题不再挡住正在讲的 PPT，弹窗点选一键交卷，边看课件边做题。
 - 💡 **后台保活不掉线**：优化了心跳与轮询通道，切屏查资料或熄屏不会轻易掉线。
-- 📱 安卓构建
+- 🛠️ **服务与网络诊断**：内置多节点与网络链路实时测速排查，快速定位课堂网络问题。
 
 ---
 
@@ -70,7 +70,7 @@
 
 | 平台 | 当前状态 | 获取方式 |
 | :--- | :--- | :--- |
-| **Android 客户端** | **v2.0.1 稳定版（15 MB）** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
+| **Android 客户端** | **v2.1.0 稳定版（15 MB）** | [点击前往夸克网盘极速下载](https://pan.quark.cn/s/236c3ee4c001) |
 | **微信小程序** | **在线体验中** | 扫描上方小程序码直接使用 |
 | **iOS 客户端** | **正在开发构建中** | iOS 用户当前推荐先扫码使用微信小程序 |
 | **官网** | 获取资源 | [点击访问项目](https://ykt.jiclub.site/) |

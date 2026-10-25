@@ -435,16 +435,16 @@ export default function App() {
               新功能
             </h2>
             <div className="flex md:flex-col items-center md:items-start justify-between text-[13px] text-[#8E8E93] md:space-y-0.5">
-              <span>版本 2.0.1</span>
+              <span>版本 2.1.0</span>
               <span>近期更新</span>
             </div>
           </div>
 
-          <div className="md:col-span-8 text-[14px] sm:text-[15px] text-[#1C1C1E] leading-relaxed space-y-1.5 pt-0.5 md:pt-1">
-            <p className="font-medium">本次更新：</p>
-            <p>- 免扫码秒进班：打开自动进入正在上课的课堂，告别抬手扫大屏。</p>
-            <p>- 超时补答与草稿防丢：实时存本地草稿，支持 9 张配图与超时补交。</p>
-            <p>- 百页课件流畅预览：支持双指无级缩放、习题提前查看与弹窗秒交。</p>
+          <div className="md:col-span-8 text-[14px] sm:text-[15px] text-[#1C1C1E] leading-relaxed space-y-2 pt-0.5 md:pt-1">
+            <p>- 支持手机短信验证码免密登录，接入腾讯防水墙验证，无需扫码。</p>
+            <p>- 上课列表与课堂交互改用官方直连，支持切换高校服务器节点。</p>
+            <p>- 新增网络与服务诊断页（关于页连点 5 次版本号进入，支持节点测速）。</p>
+            <p>- 优化会话持久化与多账号切换，精简通信中继，修复偶现掉登录态。</p>
           </div>
         </section>
 
@@ -648,7 +648,7 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="text-[#007AFF] font-medium hover:underline whitespace-nowrap shrink-0 cursor-pointer"
               >
-                v2.0.1 · 15 MB · 夸克网盘下载
+                v2.1.0 · 15 MB · 夸克网盘下载
               </a>
             </div>
 
@@ -753,7 +753,7 @@ export default function App() {
                     </span>
                   </div>
                   <div className="text-xs text-[#8E8E93] truncate">
-                    v2.0.1 · 15 MB · 夸克网盘高速下载
+                    v2.1.0 · 15 MB · 夸克网盘高速下载
                   </div>
                 </div>
                 <button

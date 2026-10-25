@@ -352,7 +352,7 @@ export const AndroidClient: React.FC = () => {
                     安装包与版本更新
                   </div>
                   <div className="text-[11px] text-slate-400 mt-0.5">
-                    当前版本 v2.0.1 (15 MB) · 夸克网盘官方源
+                    当前版本 v2.1.0 (15 MB) · 夸克网盘官方源
                   </div>
                 </div>
                 <a
