@@ -197,10 +197,11 @@ export default function App() {
     <div className="min-h-screen w-full bg-white text-[#1C1C1E] antialiased selection:bg-[#007AFF] selection:text-white pb-14">
       {/* ==================== STICKY COMPACT HEADER ON SCROLL ==================== */}
       <div
-        className={`fixed top-0 inset-x-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#E5E5EA] transition-all duration-200 ${showStickyBar
+        className={`fixed top-0 inset-x-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#E5E5EA] transition-all duration-200 ${
+          showStickyBar
             ? 'translate-y-0 opacity-100'
             : '-translate-y-full opacity-0 pointer-events-none'
-          }`}
+        }`}
       >
         <div className="w-full px-4 sm:px-6 md:px-8 h-13 flex items-center justify-between">
           <div className="flex items-center gap-2.5 min-w-0">
@@ -333,7 +334,7 @@ export default function App() {
                   </span>
                 </div>
                 <p className="text-[13px] sm:text-[15px] text-[#8E8E93] mt-0.5 truncate">
-                  雨课堂与学校教务助手
+                  雨课堂、头歌（EduCoder）与学校教务助手
                 </p>
               </div>
 
@@ -384,7 +385,7 @@ export default function App() {
                   Android 客户端
                 </div>
                 <div className="text-[11px] text-[#8E8E93] mt-0.5">
-                  v2.1.0 · 立即下载
+                  v3.0.0 · 立即下载
                 </div>
               </div>
             </a>
@@ -403,7 +404,7 @@ export default function App() {
                   iOS 客户端
                 </div>
                 <div className="text-[11px] text-[#8E8E93] mt-0.5">
-                  v2.1.0 · 立即下载
+                  v3.0.0 · 立即下载
                 </div>
               </div>
             </a>
@@ -464,17 +465,45 @@ export default function App() {
             <h2 className="text-[20px] font-bold tracking-tight text-[#1C1C1E]">
               新功能
             </h2>
-            <div className="flex md:flex-col items-center md:items-start justify-between text-[13px] text-[#8E8E93] md:space-y-0.5">
-              <span>版本 2.1.0</span>
+            <div className="flex items-center gap-3 text-[13px] text-[#8E8E93]">
+              <span>版本 3.0.0</span>
               <span>近期更新</span>
             </div>
           </div>
 
-          <div className="md:col-span-8 text-[14px] sm:text-[15px] text-[#1C1C1E] leading-relaxed space-y-2 pt-0.5 md:pt-1">
-            <p>- 支持手机短信验证码免密登录，接入腾讯防水墙验证，无需扫码。</p>
-            <p>- 上课列表与课堂交互改用官方直连，支持切换高校服务器节点。</p>
-            <p>- 新增网络与服务诊断页（关于页连点 5 次版本号进入，支持节点测速）。</p>
-            <p>- 优化会话持久化与多账号切换，精简通信中继，修复偶现掉登录态。</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 md:gap-4 text-[14px] text-[#1C1C1E] leading-relaxed">
+            <div className="md:bg-[#F2F2F7]/70 md:p-3.5 md:rounded-2xl">
+              <span className="font-semibold block text-[#1C1C1E] mb-0.5">
+                新增头歌（EduCoder）支持
+              </span>
+              <span className="text-[#3A3A3C] text-[13px]">
+                全新适配头歌实训平台，一站查看实验课程、实训任务与完成进度。
+              </span>
+            </div>
+            <div className="md:bg-[#F2F2F7]/70 md:p-3.5 md:rounded-2xl">
+              <span className="font-semibold block text-[#1C1C1E] mb-0.5">
+                免扫码秒进班
+              </span>
+              <span className="text-[#3A3A3C] text-[13px]">
+                打开自动进入正在上课的课堂，告别后排抬手放大扫大屏。
+              </span>
+            </div>
+            <div className="md:bg-[#F2F2F7]/70 md:p-3.5 md:rounded-2xl">
+              <span className="font-semibold block text-[#1C1C1E] mb-0.5">
+                超时补答与防丢
+              </span>
+              <span className="text-[#3A3A3C] text-[13px]">
+                实时保存本地答题草稿，支持 9 张解题配图上传与超时补交。
+              </span>
+            </div>
+            <div className="md:bg-[#F2F2F7]/70 md:p-3.5 md:rounded-2xl">
+              <span className="font-semibold block text-[#1C1C1E] mb-0.5">
+                百页课件流畅预览
+              </span>
+              <span className="text-[#3A3A3C] text-[13px]">
+                支持双指无级缩放、随堂习题提前查看与底部弹窗秒交。
+              </span>
+            </div>
           </div>
         </section>
 
@@ -508,10 +537,11 @@ export default function App() {
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUpOrLeave}
             onMouseLeave={handleMouseUpOrLeave}
-            className={`flex md:grid md:grid-cols-6 items-start gap-3 sm:gap-3.5 overflow-x-auto md:overflow-visible pb-2 md:pb-0 no-scrollbar select-none touch-pan-x ${isDragging
+            className={`flex md:grid md:grid-cols-6 items-start gap-3 sm:gap-3.5 overflow-x-auto md:overflow-visible pb-2 md:pb-0 no-scrollbar select-none touch-pan-x ${
+              isDragging
                 ? 'cursor-grabbing'
                 : 'cursor-grab md:cursor-pointer snap-x snap-mandatory md:snap-none'
-              }`}
+            }`}
           >
             {SCREENSHOTS.map((shot, idx) => (
               <div
@@ -626,7 +656,7 @@ export default function App() {
             信息
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-8 md:gap-x-10 divide-y divide-[#E5E5EA] sm:divide-y-0 text-[14px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-8 lg:gap-x-10 divide-y divide-[#E5E5EA] sm:divide-y-0 text-[14px]">
             <div className="py-3 sm:border-b sm:border-[#E5E5EA] flex items-center justify-between gap-4">
               <span className="text-[#8E8E93] whitespace-nowrap shrink-0">微信小程序</span>
               <button
@@ -645,7 +675,8 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="text-[#007AFF] font-medium hover:underline inline-flex items-center gap-1 whitespace-nowrap shrink-0 cursor-pointer"
               >
-                v2.1.0 · 15 MB · 夸克网盘下载
+                <span>v3.0.0 · 下载</span>
+                <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
 
@@ -657,9 +688,23 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="text-[#007AFF] font-medium hover:underline inline-flex items-center gap-1 whitespace-nowrap shrink-0 cursor-pointer"
               >
-                <span>v2.1.0 · 下载</span>
+                <span>v3.0.0 · 下载</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
+            </div>
+
+            <div className="py-3 sm:border-b sm:border-[#E5E5EA] flex items-center justify-between gap-4">
+              <span className="text-[#8E8E93] whitespace-nowrap shrink-0">当前版本</span>
+              <span className="text-[#1C1C1E] font-mono tabular-nums whitespace-nowrap shrink-0">
+                3.0.0
+              </span>
+            </div>
+
+            <div className="py-3 sm:border-b sm:border-[#E5E5EA] flex items-center justify-between gap-4">
+              <span className="text-[#8E8E93] whitespace-nowrap shrink-0">支持系统</span>
+              <span className="text-[#1C1C1E] truncate">
+                雨课堂 · 头歌 (EduCoder) · 教务
+              </span>
             </div>
 
             <div className="py-3 sm:border-b sm:border-[#E5E5EA] flex items-center justify-between gap-4">
@@ -678,7 +723,7 @@ export default function App() {
             <div className="py-3 sm:border-b sm:border-[#E5E5EA] flex items-center justify-between gap-4">
               <span className="text-[#8E8E93] whitespace-nowrap shrink-0">隐私保护</span>
               <span className="text-[#1C1C1E] truncate">
-                本地 AES 加密存储，不留存隐私
+                本地 AES 加密，不留存隐私
               </span>
             </div>
 
@@ -758,7 +803,7 @@ export default function App() {
                     Android 客户端
                   </div>
                   <div className="text-xs text-[#8E8E93] truncate">
-                    v2.1.0 · 15 MB · 夸克网盘高速下载
+                    v3.0.0 · 15M
                   </div>
                 </div>
                 <a
@@ -777,7 +822,7 @@ export default function App() {
                     iOS 客户端
                   </div>
                   <div className="text-xs text-[#8E8E93] truncate">
-                    v2.1.0 · GitHub Releases
+                    v3.0.0 · GitHub Releases
                   </div>
                 </div>
                 <a
