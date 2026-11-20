@@ -250,15 +250,21 @@ export default function App() {
         <Sparkles className="w-5 h-5 text-[#8E939E]/20 absolute top-1/3 left-[48%]" />
 
         <div className="w-full px-4 sm:px-6 md:px-8 pt-3.5 sm:pt-4 flex items-center justify-between relative z-10">
-          <a
-            href="https://blog.jiclub.site/2026/yuketang-deep-dive"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-9 h-9 rounded-full bg-white/80 backdrop-blur-md border border-black/[0.05] flex items-center justify-center text-[#1C1C1E] hover:bg-white transition-colors"
-            title="返回博客"
+          <button
+            type="button"
+            onClick={() => {
+              if (window.history.length > 1) {
+                window.history.back();
+              } else if (document.referrer) {
+                window.location.href = document.referrer;
+              }
+            }}
+            className="w-9 h-9 rounded-full bg-white/80 backdrop-blur-md border border-black/[0.05] flex items-center justify-center text-[#1C1C1E] hover:bg-white transition-colors cursor-pointer"
+            title="返回"
+            aria-label="返回上一页"
           >
             <ChevronLeft className="w-5 h-5 -ml-0.5" />
-          </a>
+          </button>
 
           <div className="flex items-center gap-2">
             <a
